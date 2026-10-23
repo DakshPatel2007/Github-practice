@@ -18,7 +18,7 @@ jobs:
         run: |
           # Update Index
           if [ "${{ github.actor }}" == "DakshPatel2007" ]; then 
-            sed -i '/<\/body>/i<p>Updated by Owner on "$(date)"'</p>' index.html
+            sed -i "/<\/body>/i <p>Updated by Owner on '$(date)'<\/p>" index.html
           fi
       # Update README
       - name: Update README
